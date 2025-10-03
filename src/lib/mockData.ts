@@ -1,0 +1,123 @@
+import {
+  TrendingUp,
+  DollarSign,
+  Target,
+  ShoppingCart,
+  BarChart,
+  LineChart,
+  Users,
+  Mail,
+  Facebook,
+  Instagram,
+} from "lucide-react";
+export const mockSimulationResult = {
+  metrics: [
+    {
+      title: "Estimated ROI",
+      value: "145%",
+      icon: TrendingUp,
+      color: "text-green-500",
+    },
+    {
+      title: "Projected Sales",
+      value: "$1,250,000",
+      icon: DollarSign,
+      color: "text-indigo-500",
+    },
+    {
+      title: "Target CPA",
+      value: "$25.50",
+      icon: Target,
+      color: "text-orange-500",
+    },
+    {
+      title: "Est. New Customers",
+      value: "12,340",
+      icon: Users,
+      color: "text-sky-500",
+    },
+  ],
+  salesForecast: [
+    { name: "Week 1", sales: 120000 },
+    { name: "Week 2", sales: 150000 },
+    { name: "Week 3", sales: 130000 },
+    { name: "Week 4", sales: 180000 },
+    { name: "Week 5", sales: 210000 },
+    { name: "Week 6", sales: 250000 },
+    { name: "Week 7", sales: 230000 },
+    { name: "Week 8", sales: 280000 },
+    { name: "Week 9", sales: 310000 },
+    { name: "Week 10", sales: 350000 },
+    { name: "Week 11", sales: 330000 },
+    { name: "Week 12", sales: 400000 },
+  ],
+  channelPerformance: [
+    { name: "Google Ads", performance: 95, fill: "hsl(var(--chart-1))" },
+    { name: "Facebook", performance: 85, fill: "hsl(var(--chart-2))" },
+    { name: "Instagram", performance: 78, fill: "hsl(var(--chart-3))" },
+    { name: "Email", performance: 92, fill: "hsl(var(--chart-4))" },
+    { name: "Organic", performance: 65, fill: "hsl(var(--chart-5))" },
+  ],
+  aiRecommendations:
+    "Based on the simulation, reallocating 15% of the budget from Organic to Google Ads could increase overall ROI by up to 8%. The '20% Off' promotion shows the highest potential for customer acquisition. Consider launching the email campaign in Week 3 to maximize impact.",
+};
+export const historicalCampaigns = [
+  {
+    id: "CAM-001",
+    name: "Summer Sale 2023",
+    budget: 50000,
+    channels: ["Google Ads", "Facebook"],
+    roi: 120,
+    sales: 600000,
+    status: "Completed",
+  },
+  {
+    id: "CAM-002",
+    name: "Black Friday Push",
+    budget: 150000,
+    channels: ["Google Ads", "Email", "Instagram"],
+    roi: 250,
+    sales: 3750000,
+    status: "Completed",
+  },
+  {
+    id: "CAM-003",
+    name: "New Year, New Gear",
+    budget: 75000,
+    channels: ["Instagram", "Organic"],
+    roi: 95,
+    sales: 712500,
+    status: "Completed",
+  },
+  {
+    id: "CAM-004",
+    name: "Spring Refresh",
+    budget: 60000,
+    channels: ["Facebook", "Email"],
+    roi: 110,
+    sales: 660000,
+    status: "Completed",
+  },
+  {
+    id: "CAM-005",
+    name: "Holiday Gift Guide",
+    budget: 120000,
+    channels: ["Google Ads", "Instagram", "Organic"],
+    roi: 180,
+    sales: 2160000,
+    status: "Completed",
+  },
+];
+export const promotionTypes = [
+  { value: "percentage_off", label: "Percentage Off (e.g., 20% off)" },
+  { value: "bogo", label: "Buy One, Get One Free" },
+  { value: "free_shipping", label: "Free Shipping" },
+  { value: "gift_with_purchase", label: "Gift with Purchase" },
+];
+export const marketingChannels = [
+  { id: "google", label: "Google Ads", icon: BarChart },
+  { id: "facebook", label: "Facebook Ads", icon: Facebook },
+  { id: "instagram", label: "Instagram Ads", icon: Instagram },
+  { id: "email", label: "Email Marketing", icon: Mail },
+  { id: "organic", label: "Organic Search", icon: LineChart },
+];
